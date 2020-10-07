@@ -82,7 +82,7 @@ Resources:
     Type: "AWS::EC2::LaunchTemplate"
     Properties:
       LaunchTemplateData:
-        ImageId: ami-0c94855ba95c71c99
+        ImageId: ami-0947d2ba12ee1ff75
         InstanceType: t2.micro
         KeyName: !Ref KeyPairName
         SecurityGroupIds:
@@ -115,7 +115,7 @@ Resources:
     Type: "AWS::EC2::LaunchTemplate"
     Properties:
       LaunchTemplateData:
-        ImageId: ami-0c94855ba95c71c99
+        ImageId: ami-0947d2ba12ee1ff75
         InstanceType: t2.micro
         KeyName: !Ref KeyPairName
         SecurityGroupIds:
@@ -148,7 +148,7 @@ Resources:
     Type: "AWS::EC2::Instance"
     Properties:
       IamInstanceProfile: !Ref EC2ConnectProfile 
-      ImageId: ami-0c94855ba95c71c99 
+      ImageId: ami-0947d2ba12ee1ff75 
       InstanceType: t2.micro
       KeyName: !Ref KeyPairName
       SecurityGroupIds:

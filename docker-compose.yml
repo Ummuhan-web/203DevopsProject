@@ -7,11 +7,11 @@ services:
       MYSQL_ROOT_PASSWORD: P123456p
       MYSQL_DATABASE: phonebook_db
       MYSQL_USER: admin
-      MYSQL_PASSWORD: Clarusway_1
+      MYSQL_PASSWORD: ummu_1
     volumes:
       - db-data:/var/lib/mysql
     networks:
-      - clarusnet
+      - ummunet
     configs:
       - source: initialdb
         target: /docker-entrypoint-initdb.d/init.sql
@@ -27,10 +27,10 @@ services:
     ports:
       - "80:80"
     networks:
-      - clarusnet
+      - ummunet
 
 networks:
-  clarusnet:
+  ummunet:
     driver: overlay
 
 volumes:
